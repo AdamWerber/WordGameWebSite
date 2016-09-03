@@ -1,0 +1,45 @@
+﻿@model Sdp_Net_proj.ViewModels.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact Page";
+}
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Contact Me - @ViewBag.Title</h2>
+        <form method="post">
+
+            <div><span class="text-muted" asp-validation-summary="ModelOnly"></span></div>
+            <div> <img src="~/img/Anger!.gif" />> </div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input class="form-control" asp-for="Name" />
+                <span class="text-muted" asp-validation-for="Name"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input class="form-control" asp-for="Email" />
+                <span  asp-validation-for="Email"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Message"></label> <br>
+                <textarea class="form-control" cols="40" rows="4" asp-for="Message"></textarea><br>
+                <span class="text-muted" asp-validation-for="Message"></span>
+            </div>
+
+            <div class="form-group">
+                <a asp-controller="App" asp-action="Index" class="btn btn-danger">Cancel</a>
+                <input class="btn btn-success" type="submit" value="Send Message" />
+            </div>
+            @if (ViewBag.UserMessage != null)
+            {
+                <div class="text-primary"> @ViewBag.UserMessage </div>
+            }
+        </form>
+    </div>
+</div>

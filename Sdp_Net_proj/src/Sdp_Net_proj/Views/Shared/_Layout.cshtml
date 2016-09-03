@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Site - @ViewBag.Title</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootswatch/spacelab/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/CSS/site.css" />
+</head>
+<body>
+
+    <div id="sidebar">
+
+        <img src="~/img/wordGameWorldLogo.png">
+        <ul class="nav">
+            <li class="active"><a asp-controller="App" asp-action="Index"> Home</a></li>
+            <li><a asp-controller="App" asp-action="About">About</a></li>
+            <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+            <li><a asp-controller="App" asp-action="Game">Game</a></li>
+        </ul>
+    </div>
+
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <button id="sidebarToggle" class="btn btn-primary btn-lg">
+                            <i class="fa fa-angle-double-left"></i>
+                        </button>
+                    </li>
+                </ul>
+                <a class="navbar-brand" asp-controller="App" asp-action="Index"> The Best Word Game Out There! </a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" class="btn btn-sm btn-info">
+                            <i class="glyphicon glyphicon-list-alt"></i> View Best Scores
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Sign_In" class="btn btn-sm btn-info">
+                            <i class="fa fa-sign-in"></i> Sign In
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Login" class="btn btn-sm btn-info">
+                            <i class="glyphicon glyphicon-log-in"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="main" class="container-fluid">
+            @RenderBody()
+        </div>
+
+        <div id="footer" class="container-fluid">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <h4 class="text-center"> &copy; A & K Ltd. </h4>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/JS/site.js"></script>
+
+    @RenderSection("scripts", false)
+</body>
+</html>
