@@ -1,0 +1,460 @@
+﻿/* CSS PAGE FOR THE WEB SITE*/
+
+/* Label Type */
+
+/*body {
+    font-family:sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input [type=text], input[type=password], textarea{
+    width: 150px;
+}*/
+
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+a {
+    color: white;
+}
+
+    /* Class Type */
+
+.headshot{
+    max-width: 150px;
+    border: 2px solid #222;
+    padding: 3px;
+}
+
+.menu{
+    font-size: 30px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li.active {
+    font-weight: bold;
+}
+
+.wordletters{
+    
+background: #83a4d4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+box-shadow: 0 13px 16px rgba(0, 0, 0, 0.12), 0 13px 14px rgba(0, 0, 0, 0.24);
+
+    width: 100%;
+    height: 150px;
+
+}
+
+
+
+.myscoretablebackround{
+    float: left;
+    text-align: center;
+    background: #83a4d4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 13px 16px rgba(0, 0, 0, 0.12), 0 13px 14px rgba(0, 0, 0, 0.24);
+    width: 50%;
+    height: 90px;
+    display: inline;
+
+
+
+
+}
+
+.opscoretablebackround{
+    float: left;
+    text-align: center;
+    background: #83a4d4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 13px 16px rgba(0, 0, 0, 0.12), 0 13px 14px rgba(0, 0, 0, 0.24);
+    width: 50%;
+    height: 90px;
+    display: inline;
+
+   
+
+}
+.maingame{
+   
+background: #83a4d4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 13px 16px rgba(0, 0, 0, 0.12), 0 13px 14px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    height: 600px;
+}
+
+.gamebutton{
+    font :x-large;
+    
+    text-align :center;
+    text-anchor :middle;
+   vertical-align: middle;
+
+}
+
+.gcell {
+    color : black;
+    font-family : Arial;
+    font-size : 16px;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/1473863167_Stop1Disabled.png) no-repeat 0 ;
+   width: 64px; 
+   height: 64px;
+    
+    
+}
+.greengcell {
+    color : black;
+    font-family : Arial;
+    font-size : 16px;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/1473863453_Stop1Pressed.png) no-repeat 0 ;
+   width: 64px; 
+   height: 64px;
+   
+    
+}
+.bluegcell {
+    color : black;
+    font-family : Arial;
+    font-size : 16px;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/1473863210_Stop1PressedBlue.png) no-repeat 0 ;
+   width: 64px; 
+   height: 64px;
+   
+    
+}
+.grow {
+    display:table-row; 
+    clear: both; 
+    overflow: hidden;
+}
+.gtable {
+    position : absolute;
+     top: 45%;
+     left :70%;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border:hidden;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-spacing : 10px;
+    border-collapse : separate;
+    
+}
+
+
+
+.submitword {
+
+
+
+      font: normal normal bold 24px/normal "Creepster", Helvetica, sans-serif;
+ color: rgb(178, 0, 255);
+    
+         background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/Perspective-Button-Go-icon.png) no-repeat 0 ;
+   width: 128px; 
+   height: 128px;
+ 
+}
+
+
+.submitword:hover {
+  text-shadow: 1px 1px 8px rgba(255, 255, 255,0.5) , -1px -1px 8px rgba(255, 255, 255,0.5) , 1px -1px 8px rgba(255, 255, 255,0.5) , -1px 1px 8px rgba(255, 255, 255,0.5) ;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.ssubmitword{
+
+     position : absolute;
+        top : 600px;
+    left : 500px;
+
+}
+
+
+.ch_gcell{
+   font-family : Arial;
+    font-size : 16px;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/1473863167_Stop1Disabled.png) no-repeat 0 -4px;
+   width: 64px; 
+   height: 64px;
+
+}
+
+
+.myscorelable2 {
+
+
+   
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal normal bold 80px/normal "Creepster", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 #2ecc71 , -1px -1px 0 #2ecc71 , 1px -1px 0 #2ecc71 , -1px 1px 0 #2ecc71 ;
+  -webkit-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.myscorelable2:hover {
+  text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5) ;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.opscorelable {
+
+
+  
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal normal bold 80px/normal "Creepster", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 #0094ff , -1px -1px 0 #0094ff , 1px -1px 0 #0094ff , -1px 1px 0 #0094ff ;
+  -webkit-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.opscorelable:hover {
+  text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(12, 128, 255,0.5) , 1px -1px 8px rgba(12, 128, 255,0.5) , -1px 1px 8px rgba(12, 128, 255,0.5) ;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.cancelbutton{
+
+      font: normal normal bold 24px/normal "Creepster", Helvetica, sans-serif;
+  color: rgb(178, 0, 255);
+          background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+   background: url(../img/Perspective-Button-Stop-icon.png) no-repeat 0 ;
+   width: 128px; 
+   height: 128px;
+}
+
+.cancelbutton:hover {
+  text-shadow: 1px 1px 8px rgba(255, 255, 255,0.5) , -1px -1px 8px rgba(255, 255, 255,0.5) , 1px -1px 8px rgba(255, 255, 255,0.5) , -1px 1px 8px rgba(255, 255, 255,0.5) ;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.gcell:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.bluegcell:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.greengcell:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@-moz-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+/* CSS to hide and show sidebar */
+#sidebar.hide-sidebar {
+    left: -250px; /* same as the width of the sidebar */
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s; /* there is a counter movement in sidebar*/
+}
+
+#wrapper.hide-sidebar {
+    margin-left: 0;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
+}
+
+    /* id Value */
+#sidebar {
+    background: #2a2c36;
+    color: #eee;
+    position: fixed; /* tells it to stay in the right place on the page - marid to "left: 0". */
+    height: 100%;
+    width: 250px;
+    overflow: hidden; /* clip any thing thats get on the sidebar. */
+    left: 0;
+    margin: 0;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s;
+}
+
+#wrapper {
+    margin: 0 0 0 250px;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
+}
+
+
+/*#main {
+    background: darkgreen;
+    padding: 4px;
+    margin: 0;
+}
+
+#footer {
+    background: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+}*/

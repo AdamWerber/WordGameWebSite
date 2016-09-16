@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Game Page";
+}
+
+
+<h2> The @ViewBag.Title</h2>
+
+@section scripts{
+    <script type="text/javascript" src="~/JS/new_game.js"></script>
+}
+
+<div class="col-md-6 col-xs-8">
+    <h3> start new game </h3>
+
+  
+
+    <a asp-controller="App" asp-action="Thegame">
+        <img src="~/img/new game.jpg"  width="150" height="150">
+    </a>
+
+     
+</div>
+
+<div id="maingame" class="maingame">
+
+
+</div>
